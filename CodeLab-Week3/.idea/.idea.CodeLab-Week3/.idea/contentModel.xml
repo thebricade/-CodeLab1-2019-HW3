@@ -7,6 +7,8 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="DinoControl.cs" t="Include" />
+          <e p="DinoGround.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="HugScript.cs" t="Include" />
           <e p="SceneManager.cs" t="Include" />
