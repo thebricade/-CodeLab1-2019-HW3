@@ -24,7 +24,7 @@ public class SpawnFlower : MonoBehaviour
         if (limitSpawn <= 10)
         {
             GameObject newFlower = Instantiate(Resources.Load<GameObject>("Prefabs/Flower"));
-            newFlower.transform.position = new Vector2(Random.Range(-10,10), Random.Range(-5,5));
+            newFlower.transform.position = new Vector3(Random.Range(-5,5), Random.Range(-3,5), -1);
             limitSpawn++;
         }
     }
