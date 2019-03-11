@@ -9,9 +9,11 @@
         <e p="Scripts" t="Include">
           <e p="DinoControl.cs" t="Include" />
           <e p="DinoGround.cs" t="Include" />
+          <e p="Flowers.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="HugScript.cs" t="Include" />
           <e p="SceneManager.cs" t="Include" />
+          <e p="SpawnFlower.cs" t="Include" />
         </e>
       </e>
       <e p="CodeLab-Week3.sln" t="IncludeFlat" />

@@ -44,23 +44,26 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //setting Game Menu objects
-        currentState = GameState.title;
-        //setupButton
-        GameObject titleMenu = Instantiate((Resources.Load<GameObject>("Prefabs/TitleMenu")));
-        playButton = GameObject.Find("Play").GetComponent<Button>();
-        playButton.onClick.AddListener(TaskOnClick);
+
         
         //Singleton (there can only be one) 
         if (instance == null)
         {
             DontDestroyOnLoad(gameObject);
             instance = this;
+            //setting Game Menu objects
+            currentState = GameState.title;
+            //setupButton
+            GameObject titleMenu = Instantiate((Resources.Load<GameObject>("Prefabs/TitleMenu")));
+            playButton = GameObject.Find("Play").GetComponent<Button>();
+            playButton.onClick.AddListener(TaskOnClick);
         }
         else
         {
             Destroy(gameObject);
         }
+        
+        
     }
 
     // Update is called once per frame
